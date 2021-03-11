@@ -1,0 +1,10 @@
+const API_VERSION = 'v1';
+const STRIPE_API_KEY =
+	'sk_test_51HyfV7JD57UX4pg5aF8yBoCNttTlTO4df0t10KuvR3USoUmG8fIDAwFJt1OtqtVdWo0JOXCyltwkCnUacnITNA2b00a2iQMjnd';
+const STRIPE_API_VERSION = '2020-08-27';
+
+module.exports = {
+	API_VERSION,
+	STRIPE_API_KEY,
+	STRIPE_API_VERSION,
+};
