@@ -217,7 +217,7 @@ function uploadVideo(req, res, next) {
 
 					if (req.files) {
 						let filePath = req.files.video.path;
-						let fileSplit = filePath.split('\\');
+						let fileSplit = filePath.split('/');
 						let fileName = fileSplit[2];
 
 						let extSplit = fileName.split('.');
@@ -299,7 +299,7 @@ function updateVideo(req, res, next) {
 						if (req.files) {
 							let filePath = req.files.video.path;
 							console.log(req.files.video.name);
-							let fileSplit = filePath.split('\\');
+							let fileSplit = filePath.split('/');
 							let fileName = fileSplit[2];
 
 							let extSplit = fileName.split('.');
