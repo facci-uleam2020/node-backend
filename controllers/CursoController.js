@@ -340,7 +340,7 @@ function uploadImg(req, res, next) {
           // res.status(200).send({ message: 'Curso se ha actualizado correctamente' });
           if (req.files) {
             let filePath = req.files.img.path;
-            let fileSplit = filePath.split("\\");
+            let fileSplit = filePath.split("/");
             let fileName = fileSplit[2];
 
             let extSplit = fileName.split(".");
